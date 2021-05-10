@@ -2,13 +2,7 @@ class Solution {
     /*
     * 从最后一个位置开始，找到一个上升点，上升点之前的无需改动。 然后，翻转上升点之后的降序。 在降序里，找到第一个比上升点大的，交换位置。
     */
-    public void reverse(int[] num, int start, int end) {
-        for (int i = start, j = end; i < j; i++, j--) {
-            int temp = num[i];
-            num[i] = num[j];
-            num[j] = temp;
-        }
-    }
+
     
     public int[] nextPermutation(int[] num) {
         // find the last increase index
